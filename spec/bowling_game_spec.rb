@@ -43,4 +43,9 @@ describe BowlingGame do
     expect(game.score).to eq(24)
   end
 
+  it "can score a perfect game" do 
+    roll_many(12, 10)
+    expect(game.score).to eq(300)
+  end
+
 end
